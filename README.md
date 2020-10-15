@@ -95,23 +95,24 @@ sem_wait (armarhamburguesa)
 sem_wait (armarhamburguesa_aux)
 sem_wait (armarhamburguesa_aux2)
   imprimirAccion(armarhamburguesa)
-}	```
-
+}
+```
 	
   
 ## Problemas Encontrados
 Me encontre con distintos problemas a lo largo del desarrollo.
 ### Llamada a la acción "armarhamburguesa" previo a terminar los requisitos: 
 Me surgió la duda de como hacer el sem_post a llamar hamburguesa, ya que previo debe cumplir con los los requisitos de tener el medallon armado, lechuga y tomate cortados y el pan horneado. Para lograr esto, agregue 2 semafotos auxiliares 
+```
 	sem_t sem_armarhamburguesa_aux;
 	sem_t sem_armarhamburguesa_aux2;
-  
+ ```
 y en la funcion armarhamburguesa, agregue:
 
-sem_wait(&mydata->semaforos_param.sem_armarhamburguesa);   //esta viene derivada de cocinar 
+```sem_wait(&mydata->semaforos_param.sem_armarhamburguesa);   //esta viene derivada de cocinar 
 sem_wait(&mydata->semaforos_param.sem_armarhamburguesa_aux);  //esta viene derivada de hornearpan   
 sem_wait(&mydata->semaforos_param.sem_armarhamburguesa_aux2);  //esta viene derivada de cortarextra  
-
+```
 Esto obliga al programa a aguardar que se completen los 3 requisitos.
 
 ### Uso de los semaforos mutex: 
