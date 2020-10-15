@@ -1,0 +1,8 @@
+cortarextra;lechuga;tomate
+hornearpan;pan
+cortar;cebolla;ajo;perejil
+mezclar;cebolla;ajo;perejil;carne picada
+salar;cebolla;ajo;perejil;carne picada
+armarmedallon;cebolla;ajo;perejil;carne picada
+cocinar;medallones armados
+armarhamburguesa;medallones armados y cocinados;pan horneado;lechuga y tomate
