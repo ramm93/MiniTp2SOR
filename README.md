@@ -14,11 +14,11 @@ Para compilar:   gcc HellsBurgers.c -o ejecutable -lpthread
 Para ejecutar:   ./ejecutable
 
 ## Psuedocodigo
-	```
+```	
 mutex1  //Semaforo mutex compartidos 
 mutex2  //Semaforo mutex compartidos
-mutex3  //Semaforo mutex compartidos
-
+mutex3  //Semaforo mutex compartidos 
+	
 
 main();{
 
@@ -95,9 +95,9 @@ sem_wait (armarhamburguesa)
 sem_wait (armarhamburguesa_aux)
 sem_wait (armarhamburguesa_aux2)
   imprimirAccion(armarhamburguesa)
-}
+}	```
 
-	```
+	
   
 ## Problemas Encontrados
 Me encontre con distintos problemas a lo largo del desarrollo.
