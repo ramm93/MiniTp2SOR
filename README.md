@@ -13,7 +13,7 @@ Para lograr esto, me vi obligado a adaptarme al uso de semaforos para validar el
 Para compilar:   gcc HellsBurgers.c -o ejecutable -lpthread
 Para ejecutar:   ./ejecutable
 
-## Psuedocodigo
+## PseudoCodigo
 ```	
 mutex1  //Semaforo mutex compartidos 
 mutex2  //Semaforo mutex compartidos
